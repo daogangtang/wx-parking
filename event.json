@@ -1,0 +1,25 @@
+{
+    "ParkingLot": {
+        "owner": "AccountId",
+        "remain": "u32",
+        "capacity": "u32",
+        "current_price": "Balance",
+        "min_price": "Balance",
+        "max_price": "Balance",
+        "latitude": "i32",
+        "longitude": "i32"
+    },
+    "ParkingLotInfo": "ParkingLot",
+
+    "ParkingInfo": {
+        "user_id": "AccountId",
+        "parking_lot_hash": "H256",
+        "info_hash": "H256",
+        "enter_time": "Moment",
+        "current_time": "Moment",
+        "current_fee": "Balance"
+    },
+
+    "EnteringInfo": "ParkingInfo",
+    "LeavingInfo": "ParkingInfo"
+}
